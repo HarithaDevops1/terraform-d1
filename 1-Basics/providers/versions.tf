@@ -22,3 +22,11 @@ provider "aws" {
     secret_key = ""
     
     }
+
+# Provider's other info : Multiprovider: alias
+ provider "aws" {
+    region = "us-west-1"
+    profile = "myprofile"
+    alias = "aws-west-1"
+   
+    }
